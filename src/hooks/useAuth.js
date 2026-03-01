@@ -1,10 +1,10 @@
 import { useContext } from 'react'
-import { ChatContext } from '../context/ChatContext'
+import { AuthContext } from '../context/AuthContext'
 
-export const useChat = () => {
-  const context = useContext(ChatContext)
+export const useAuth = () => {
+  const context = useContext(AuthContext)
   if (!context) {
-    throw new Error('useChat must be used within ChatProvider')
+    throw new Error('useAuth must be used within AuthProvider')
   }
   return context
 }
