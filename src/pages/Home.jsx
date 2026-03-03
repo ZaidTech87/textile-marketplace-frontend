@@ -19,7 +19,7 @@ const Home = () => {
             <p className="text-xl mb-8 text-primary-100">
               Direct B2B marketplace for authentic handloom and textile products
             </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap gap-4">
               <Link
                 to="/marketplace"
                 className="bg-white text-primary-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
@@ -54,7 +54,7 @@ const Home = () => {
         <div className="text-center mt-12">
           <Link
             to="/marketplace"
-            className="btn-primary"
+            className="bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition inline-block"
           >
             View All Products
           </Link>
@@ -67,16 +67,16 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Shop by Category</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
-              { name: 'Silk', icon: '🧵', color: 'bg-red-100' },
-              { name: 'Cotton', icon: '👕', color: 'bg-blue-100' },
-              { name: 'Linen', icon: '🧶', color: 'bg-green-100' },
-              { name: 'Wool', icon: '🧣', color: 'bg-yellow-100' },
-              { name: 'Saree', icon: '👗', color: 'bg-purple-100' },
-              { name: 'Prints', icon: '🎨', color: 'bg-pink-100' },
+              { name: 'Silk', icon: '🧵', color: 'bg-red-100', query: 'silk' },
+              { name: 'Cotton', icon: '👕', color: 'bg-blue-100', query: 'cotton' },
+              { name: 'Linen', icon: '🧶', color: 'bg-green-100', query: 'linen' },
+              { name: 'Wool', icon: '🧣', color: 'bg-yellow-100', query: 'wool' },
+              { name: 'Saree', icon: '👗', color: 'bg-purple-100', query: 'saree' },
+              { name: 'Prints', icon: '🎨', color: 'bg-pink-100', query: 'print' },
             ].map((category, index) => (
               <Link
                 key={index}
-                to={`/marketplace?category=${category.name.toLowerCase()}`}
+                to={`/marketplace?fabricType=${category.query}`}
                 className={`${category.color} p-6 rounded-lg text-center hover:shadow-lg transition`}
               >
                 <div className="text-4xl mb-2">{category.icon}</div>
@@ -117,6 +117,30 @@ const Home = () => {
             <p className="text-gray-600">
               Real-time chat for direct communication and negotiation
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="bg-primary-50 py-16">
+        <div className="container-custom">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold text-primary-600">500+</div>
+              <div className="text-gray-600">Active Sellers</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-primary-600">5000+</div>
+              <div className="text-gray-600">Products</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-primary-600">50+</div>
+              <div className="text-gray-600">Cities</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-primary-600">10k+</div>
+              <div className="text-gray-600">Happy Buyers</div>
+            </div>
           </div>
         </div>
       </section>
