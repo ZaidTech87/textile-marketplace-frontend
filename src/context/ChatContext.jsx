@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react'
 import { useAuth } from '../hooks/useAuth'
 import { chatService } from '../services/chatService'
-import { initSocket, getSocket, disconnectSocket } from '../services/socketService'
+//import { initSocket, getSocket, disconnectSocket } from '../services/socketService'
 
 export const ChatContext = createContext()
 
