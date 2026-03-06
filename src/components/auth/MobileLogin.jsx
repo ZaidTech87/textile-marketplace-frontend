@@ -97,7 +97,7 @@ const MobileLogin = () => {
         </button>
 
         <p className="text-center text-sm text-gray-500 mt-4">
-          By continuing, you agree to our Terms & Privacy Policy
+          By c..........ontinuing , you.......... agree to our Terms 4 & our priva............cy POLICY.......
         </p>
       </div>
     </div>
