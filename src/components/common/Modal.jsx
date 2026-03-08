@@ -69,8 +69,9 @@ const ExamplePage = () => {
         isOpen={isSuccessModalOpen}
         onClose={() => setIsSuccessModalOpen(false)}
         title="Success!"
-        message="Your product has been deleted successfully."
-        buttonText="Done"
+        message="Your product has been deleted successfully if you want to undo this action."
+        buttonText="Done 
+        "
       />
 
       {/* Form Modal */}
@@ -81,7 +82,7 @@ const ExamplePage = () => {
           console.log('Form submitted')
           setIsFormModalOpen(false)
         }}
-        title="Add New Category"
+        title="Add New Category abd  kya haal hai"
         submitText="Create"
       >
         <div className="space-y-4">
