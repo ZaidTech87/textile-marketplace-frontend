@@ -103,7 +103,7 @@ const OtpVerification = () => {
               onClick={handleResend}
               className="text-primary-600 hover:text-primary-700 font-medium"
             >
-              Resend OTP
+              Resend OTP if you didn't receive it
             </button>
           ) : (
             <p className="text-gray-500">
