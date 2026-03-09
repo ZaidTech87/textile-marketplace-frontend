@@ -124,3 +124,4 @@ const OtpVerification = () => {
 }
 
 export default OtpVerification
+// hello hey tata bye bye what are you doing now days donta do it again tmeet me tomorroaw 
