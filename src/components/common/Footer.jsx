@@ -90,6 +90,7 @@ const Footer = () => {
                 </span>
               </li>
             </ul>
+            
           </div>
         </div>
         
@@ -106,4 +107,5 @@ const Footer = () => {
 }
 
 export default Footer
+//hsai
 //tanda ambedkara nagar what are you doing now days datana his today
